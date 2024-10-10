@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    body {
+  background-image:url('AB.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+  </style>
+<title>BlazeWatch</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<body>
+
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()">Close &times;</button>
+  <a href="#" class="w3-bar-item w3-button">Client Application</a>
+  <a href="#" class="w3-bar-item w3-button">Region map</a>
+  
+  <a href="#" class="w3-bar-item w3-button">Home</a>
+  <a href="#" class="w3-bar-item w3-button">Log out</a>
+</div>
+
+<div id="main">
+
+<div class="w3-teal">
+  <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+    <h1>Dasboard</h1>
+  </div>
+</div>
+<div class="w3-container">
+  <div class="w3-panel w3-card-4 w3-white"><p><b>Choose option:<b/></p></div>
+<button class="btn btn-1 btn-sep icon-info">Register</button>
+<button class="btn btn-2 btn-sep icon-cart">Check status</button>
+<button class="btn btn-3 btn-sep icon-heart">Review Problems</button>
+<button class="btn btn-4 btn-sep icon-send">Download information</button>
+<div class="w3-container"></div>
+  <div class="w3-panel w3-card-2 w3-yellow"><p>Application Submitted: 67,489</p></div>
+  <div class="w3-panel w3-card-4 w3-yellow"><p>Application Rejected: 4,562</p></div>
+</div>
+</div>
+
+
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+
+</body>
+</html>
